@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Genea Haglund-->
+<!--Assignment Completed on 4-26-22-->
+<head>
+    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Genea Haglund">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {
+            box-sizing: border-box;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        nav {
+            background-color: lightgrey;
+            padding: 1px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: rgb(55, 55, 55);
+            text-decoration: none;
+        }
+        h2 {
+            text-align: center;
+        }
+        .column {
+            float: left;
+            padding: 10px;
+            height: 600px
+        }
+
+        .left {
+            width: 25%;
+            padding: 20px;
+        }
+
+        .right {
+            width: 75%;
+            padding: 30px;
+
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: lightgrey;
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <img src="imgs/headline.png" alt="headline" class="center">
+
+    <h2>About</h2>
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <div class="row">
+        <div class="column left" style="background-color:rgb(231, 231, 231)">
+            <img src="imgs/me.png" alt="photographer" width="350">
+        </div>
+        <div class="column right" style="background-color:white">
+            <h3>Hello!</h3>
+            <p>My name is Genea</p>
+            <p>I am currently a student at Dunwoody College of Technology in the Graphic Design and Production Program and loving it. 
+                In my freetime I like to hike, play scrabble and spend time cooking or baking</p>
+            <p>I love to caputre memories for the clients that I work with. Seeing confidence in someone as I'm taking their 
+                senior portraits, seeing the love between a couple during an engagement or proposal session, and seeing a beautiful
+                family so happy together is why I love taking photos!</p>
+        </div>
+      </div>
+      
+      <footer>
+        <a href="#instagram">Instagram</a>
+        <a href="#facebook">Facebook</a>
+
+        <p>ghaglund.photography@gmail.com</p>
+    </footer>
+</body>
+</html>

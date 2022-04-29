@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Genea Haglund-->
+<!--Assignment Completed on 4-26-22-->
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Genea Haglund">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {
+            box-sizing: border-box;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        nav {
+            background-color: lightgrey;
+            padding: 1px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: rgb(55, 55, 55);
+            text-decoration: none;
+            }
+        h2 {
+            text-align: left;
+        }
+        .column {
+            float: left;
+            padding: 10px;
+            height: 400px
+        }
+
+        .left {
+            width: 25%;
+            padding: 20px;
+        }
+
+        .right {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: lightgrey;
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+  }
+}
+        
+    </style>
+</head>
+
+<body>
+    <img src="imgs/headline.png" alt="headline" class="center">
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    </nav>
+
+    <div class="row">
+        <div class="column left" style="background-color:rgb(231, 231, 231)">
+          <h2>Let's Get in Touch!</h2>
+          <p>ghaglund.photography@gmail.com</p>
+          <p>763.222.9720</p>
+        </div>
+        <div class="column right" style="background-color:white">
+            <h2>Contact</h2>
+            <form action="ContactInformation">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" size="35"><br><br>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname" size="35"><br><br>
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" name="phone" size="35"><br><br>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" size="35"><br><br>
+                <label for="event">Event Date: </label>
+                <input type="text" id="event" name="event" size="35"><br><br>
+                <label for="about">Tell Me About Yourself, Partner or Family: </label>
+                <input type="text" id="about" name="about" size="35"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+              <p>I can't wait to meet you!</p>
+        </div>
+      </div>
+      
+      <footer>
+        <a href="#instagram">Instagram</a>
+        <a href="#facebook">Facebook</a>
+
+        <p>ghaglund.photography@gmail.com</p>
+    </footer>
+</body>
+</html>

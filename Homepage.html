@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Genea Haglund-->
+<!--Assignment Completed on 4-26-22-->
+<head>
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Genea Haglund">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*This information about color and font will be the same on all 4 layouts
+        So i only added it to this homepage layout*/
+
+        /* I decided using white and 2 different shades of gray 
+        to not distract from the photography on my website*/
+
+        /* White #FFFFFF
+        Light Grey #D3D3D3
+        Dark Grey #373737 
+        The website will mostly be white and the nav bar and footer 
+        grey to highlight some information. The white will make all the photos
+        stand out nicely*/
+
+        /*The fonts are very simple and there is one script font in the form of
+        a png for my headline on each page.
+        
+        Font size is either 15px or 30px and I use the h2 tag on some of the pages*/
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main;}
+        .item4 {grid-area: section;}
+        .item5 {grid-area: right;}
+
+        body{
+            background-color: white;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'main main main main main main main'
+            'section section section right right right'
+            'footer footer footer footer footer footer';
+            gap: 10px;
+            padding: 10px;
+            }
+        
+        .grid-container > div {
+            text-align: center;
+        }
+        nav {
+            background-color: lightgrey;
+        }
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            padding: 20px;
+        }
+        a {
+            color: rgb(55, 55, 55);
+            text-decoration: none;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .item1 {
+            font-size: 30px;
+        }
+        .item2 {
+            font-size: 15px;
+            padding: 10px;
+        }
+        .item3 {
+            padding-bottom: 20px;
+        }
+        footer{
+            background-color: lightgrey;
+            padding: 20px;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class=".item1"> 
+            <img src="imgs/headline.png" alt="Headline" class="center"> </div>
+        <nav>
+            <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class=".item2">
+            <img src="imgs/homepage.png" alt="3 images" width="1080">
+        </div>
+        <div class=".item3">
+            <p> Thank you for visiting my page! My work includes portraits, couples and family photos. Check out my portfolio below, I'd love to work with you! </p> <!--Portfolio Page would be linked-->
+            <br>
+            <button type="button">View my work</button>  
+        </div>
+    </div>
+
+    <footer>
+        <a href="#instagram">Instagram</a>
+        <a href="#facebook">Facebook</a>
+
+        <p>ghaglund.photography@gmail.com</p>
+    </footer>
+
+</body>
+</html>
